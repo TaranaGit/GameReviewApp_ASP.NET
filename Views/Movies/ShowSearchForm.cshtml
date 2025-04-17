@@ -1,0 +1,26 @@
+﻿@model MovieReviewsApp.Models.Movie
+
+<h4>Search for Review</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchResults">
+           
+            <div class="form-group">
+                <label for="SearchInput" class="control-label"></label>
+                <input name="SearchInput" class="form-control" />
+                <br />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+                <br/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <br />
+    <a asp-action="Index">Back to List</a>
+</div>
